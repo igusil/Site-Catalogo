@@ -77,13 +77,13 @@ const menu = [
     category: "Hidratantes",
     price: 55.99,
     img: "./images/ekosh.jpg",
-    desc: `Ekos Hidratante Corporal Maracujá' 400ml Com óleo de maracujá, este néctar hidrata a pele por 30 horas. Com textura leve e sedosa, possui ação desodorante e rápida absorção. Com óleo de maracujá, este néctar hidrata a pele por 30 horas.`,
+    desc: `Ekos Hidratante Corporal Maracujá 400ml Com óleo de maracujá, este néctar hidrata a pele por 30 horas. Com textura leve e sedosa, possui ação desodorante e rápida absorção. Com óleo de maracujá, este néctar hidrata a pele por 30 horas.`,
   },
 ];
-// get parent element
+// pega o elemento pai no html
 const sectionCenter = document.querySelector(".section-center");
 const btnContainer = document.querySelector(".btn-container");
-// display all items when page loads
+// mostra todos os item quando a pagina carregar
 window.addEventListener("DOMContentLoaded", function () {
   diplayMenuItems(menu);
   displayMenuButtons();
@@ -98,7 +98,7 @@ function diplayMenuItems(menuItems) {
           <div class="item-info">
             <header>
               <h4>${item.title}</h4>
-              <h4 class="price">$${item.price}</h4>
+              <h4 class="price">R$ ${item.price}</h4>
             </header>
             <p class="item-text">
               ${item.desc}
